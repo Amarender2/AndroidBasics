@@ -140,6 +140,15 @@ Example:
 </LinearLayout>
 
 
+https://gist.github.com/udacityandroid
+
+https://www.uplabs.com/android
+
+https://material.io/guidelines/material-design/introduction.html?utm_source=udacity&utm_medium=course&utm_campaign=android_basics
+
+http://androidweekly.net
+
+
 
 
 
