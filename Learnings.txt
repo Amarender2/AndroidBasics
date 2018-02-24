@@ -1,0 +1,148 @@
+Views (Basic building block of app)
+
+- ImageView
+- TextView
+- Button
+
+https://developers.google.com/android/for-all/vocab-words/?utm_source=udacity&utm_medium=course&utm_campaign=android_basics
+
+So what is a "density independent" pixel? Well, better screens will often have more pixels in the same amount of space. The number of pixels in a fixed space is known as the screen's pixel density. In case you're wondering, 48dp translates to approximately 9mm in physical size.
+
+Views Cheat Sheet
+https://drive.google.com/file/d/0B5XIkMkayHgRMVljUVIyZzNmQUU/view
+
+<TextView
+    android:text="Hapy Birthday"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:background="@android:color/darker_gray"/>
+
+
+ - width can be "x"dp or wrap_content
+ - For textSize use "x"sp
+ - color can be hashcode as well
+
+ Read material-design
+ https://material.io/guidelines/material-design/introduction.html
+
+ <ImageView
+ android:id="@+id/photo_image_view"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent"
+ android:scaleType="centerCrop"
+ android:src="@drawable/beach" />
+
+
+ ViewGroup - Container for views
+ LinearLayout
+ RelativeLayout - Relative to parent or childs to each other
+
+<LinearLayout
+    android:orientation="vertical" / horizontal
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:text="Guest List"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Kunal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+20dp fixed height/width
+wrap_content to height/width wraps the content
+match_parent to match height and width to height/width of parent
+
+
+Layout Weight
+Height/Width by weight or percentages or points
+
+
+Vertical LinearLayout
+height: 0dp, weight: 1
+Horizontal LinearLayout
+width: 0dp, weight: 1
+
+Complete Android Tutorial Here
+https://developer.android.com/guide/topics/ui/layout/linear.html?utm_source=udacity&utm_medium=course&utm_campaign=android_basics
+
+https://developer.android.com/reference/android/widget/RelativeLayout.LayoutParams.html?utm_source=udacity&utm_medium=course&utm_campaign=android_basics
+
+ImageView Attributes
+Android RelativeLayout
+- Relative to Parent
+android:layout_alignParentTop="true"or"false"
+android:layout_alignParentBottom="true"or"false"
+android:layout_alignParentLeft="true"or"false"
+android:layout_alignParentRight="true"or"false"
+android:layout_centerHorizontal="true"or"false"
+android:layout_centerVertical="true"or"false"
+
+- Relative to other children
+Assign viewid names
+on ben textview
+android:id="@+id/ben_text_view"
+
+positioning children relative to other views
+on kunal textview
+android:layout_toLeftOf="@id/ben_text_view"
+android:layout_above="@id/ben_text_view"
+
+padding is handled by child component
+margin is handled by parent component
+
+TextView Attribute
+android:padding='8dp', android:paddingLeft='8dp' etc..
+
+TextView Attribute
+android:padding='8dp', android:paddingLeft='8dp' etc..
+android:layout_margin='8dp', android:layout_marginLeft='8dp' etc..
+
+Example:
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:src="@drawable/ocean"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:text="You're invited!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="45sp"
+        android:background="#009688"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"/>
+
+    <TextView
+        android:text="Bonfire at the beach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:background="#009688"/>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
