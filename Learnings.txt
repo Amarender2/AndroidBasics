@@ -148,6 +148,34 @@ https://material.io/guidelines/material-design/introduction.html?utm_source=udac
 
 http://androidweekly.net
 
+Accessing Resources
+R class, aapt tool generates it.
+
+Java                        In XML
+R.drawable.photo            @drawable/photo
+R.String.hello              @string/hello
+R.layout.activity_main      @layout/activity_main
+R.color.red                 @color/red
+R.id.textview               @id/textview
+
+
+https://developer.android.com/studio/command-line/logcat.html?utm_source=udacity&utm_medium=course&utm_campaign=android_basics
+
+https://developer.android.com/guide/components/intents-common.html?utm_source=udacity&utm_medium=course&utm_campaign=android_basics
+
+Localization Checklist
+- xliff tag to add name
+
+
+Translation Editor to add new resources file based on language.
+
+https://developer.android.com/guide/topics/manifest/manifest-intro.html?utm_source=udacity&utm_medium=course&utm_campaign=android_basics
+
+
+
+
+
+
 
 
 
